@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>About</title>
+    <%= stylesheet_link_tag 'home_gui' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'manifest' %>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li class="toppage">
+            <a href="/introduction">TOP</a>
+            <div class="pulldown">
+            <ul>
+                <li class="nav_anc"><a href="/introduction#anc1">サイト主の紹介</a></li>
+                <li class="nav_anc"><a href="/introduction#anc2">私の研究について</a></li>
+                <li class="nav_anc"><a href="/introduction#anc3">RoboCupでの活動内容</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="page1">
+            <a href="/about">About</a>
+            <div class="pulldown">
+            <ul>
+                <li class="nav_anc"><a href="#anc1">サイトを作った経緯</a></li>
+                <li class="nav_anc"><a href="#anc2">Rubyの勉強</a></li>
+                <li class="nav_anc"><a href="#anc3">C++への愛</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="page2">
+            <a href="/hobbies">Hobbies</a>
+            <div class="pulldown">
+            <ul>
+                <li class="nav_anc"><a href="/page2/#anc1">プログラミング</a></li>
+                <li class="nav_anc"><a href="/page2/#anc2">音楽鑑賞</a></li>
+                <li class="nav_anc"><a href="/page2/#anc3">読書</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="page3">
+            <a href="/page3/">University</a>
+            <div class="pulldown">
+            <ul>
+                <li class="nav_anc"><a href="/page3/#anc1">大学での講義</a></li>
+                <li class="nav_anc"><a href="/page3/#anc2">学部生の研究</a></li>
+                <li class="nav_anc"><a href="/page3/#anc3">大学生活</a></li>
+            </ul>
+            </div>
+            </li>
+        </nav>
+    </header>
+    <main>
+        <div class="h1_box">
+            <h1>Self-Introduction</h1>
+        </div>
+        <h1></h1>
+        <section id="anc1">
+            <div style="background-color: white; padding: 20px; border: 1px solid #ccc;" class="textbox" id="anc2">
+                <h2>私がこのサイトを作成した理由</h2>
+                <p>私がこのサイトを作成した理由は2つあります。1つ目は、RubyとWebサイト関係の技術に興味があったからです。<br>
+                2つ目には、こういうのを作ることで自分の技術力を公開することで<br>
+                就職やインターンで採用されやすいと聞いたからです。</p>
+            </di>
+        </section>
+        <h1></h1>
+        <section id="anc2">
+            <div style="background-color: white; padding: 20px; border: 1px solid #ccc;" class="textbox" id="anc2">
+                <h2>このサイトを作成するにあたって</h2>
+                    <p>このサイトを作成するにあたって、HTMLとCSSとJavaScriptを使って作成しました。また、Ruby on Railsを使ってデータベースを作成しました。<br>
+                    まず初めに、HTMLとCSSを勉強から始めました。勉強と言ってもHTMLとCSSについて教えてくれる動画を参照しただけです。<br>
+                    JavaScriptの勉強では、独習JavaScriptという参考書を読んで勉強しています。これは、現在進行形で勉強中です。<br>
+                    その後に、Rubyの勉強を始めました。Rubyを勉強する際に参考書を読んでひたすらコードを何かしら書くように心掛けました。<br>
+                    実際に勉強するのに使っていた参考書は「プロを目指す人のためのRuby入門［改訂2版］」です。この本はRubyについてとてもわかりやすく書かれており、<br>
+                    Ruby3.0にも対応しているため最新の情報をインプットすることができました。また、リファクタリング等にも触れており何度も読むべき本だと思いました。<br>
+                    Ruby on Railsの勉強には、「パーフェクトRuby on Rails」という参考書を利用しました。</p>
+            </div>
+        </section>
+        <h1></h1>
+        <section id="anc3">
+            <div style="background-color: white; padding: 20px; border: 1px solid #ccc;" class="textbox" id="anc3">
+                <h2>C++への愛</h2>
+                <p>私はC++が好きです。C++は、プログラミング言語の中でも特に高速な言語です。また、C++は、オブジェクト指向プログラミング言語であり、<br>
+                クラスやオブジェクトを使ってプログラムを書くことができます。C++は、C言語と互換性があり、C言語のプログラムをそのままC++でコンパイルすることができます。<br>
+                そのため、C言語のプログラムを書いたことがある人は、C++を学ぶのが比較的簡単です。C++は、プログラミング言語の中でも特に高速な言語です。<br>
+                また、C++は、オブジェクト指向プログラミング言語であり、クラスやオブジェクトを使ってプログラムを書くことができます。C++は、C言語と互換性があり、<br>
+                C言語のプログラムをそのままC++でコンパイルすることができます。そのため、C言語のプログラムを書いたことがある人は、C++を学ぶのが比較的簡単です。</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

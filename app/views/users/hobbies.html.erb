@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>About</title>
+    <%= stylesheet_link_tag 'home_gui' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'manifest' %>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li class="toppage">
+            <a href="/introduction">TOP</a>
+            <div class="pulldown">
+            <ul>
+                <li class="nav_anc"><a href="/introduction#anc1">サイト主の紹介</a></li>
+                <li class="nav_anc"><a href="/introduction#anc2">私の研究について</a></li>
+                <li class="nav_anc"><a href="/introduction#anc3">RoboCupでの活動内容</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="page1">
+            <a href="/about">About</a>
+            <div class="pulldown">
+            <ul>
+                <li class="nav_anc"><a href="/about#anc1">サイトを作った経緯</a></li>
+                <li class="nav_anc"><a href="/about#anc2">Rubyの勉強</a></li>
+                <li class="nav_anc"><a href="/about#anc3">C++への愛</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="page2">
+            <a href="/hobbies">Hobbies</a>
+            <div class="pulldown">
+            <ul>
+                <li class="nav_anc"><a href="#anc1">プログラミング</a></li>
+                <li class="nav_anc"><a href="#anc2">音楽鑑賞</a></li>
+                <li class="nav_anc"><a href="#anc3">読書</a></li>
+            </ul>
+            </div>
+            </li>
+            <li class="page3">
+            <a href="/university">University</a>
+            <div class="pulldown">
+            <ul>
+                <li class="nav_anc"><a href="/university#anc1">大学での講義</a></li>
+                <li class="nav_anc"><a href="/university#anc2">学部生の研究</a></li>
+                <li class="nav_anc"><a href="/university#anc3">大学生活</a></li>
+            </ul>
+            </div>
+            </li>
+        </nav>
+    </header>
+</body>

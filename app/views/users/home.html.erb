@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SelfIntroduction</title>
+    <%= stylesheet_link_tag 'Maki' %>
+    <%= stylesheet_link_tag 'home_gui' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'manifest' %>
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li class="toppage">
+  <a href="/introduction">TOP</a>
+  <div class="pulldown">
+    <ul>
+      <li class="nav_anc"><a href="#anc1">サイト主の紹介</a></li>
+      <li class="nav_anc"><a href="#anc2">私の研究について</a></li>
+      <li class="nav_anc"><a href="#anc3">RoboCupでの活動内容</a></li>
+    </ul>
+  </div>
+</li>
+<li class="page1">
+  <a href="/about">About</a>
+  <div class="pulldown">
+    <ul>
+      <li class="nav_anc"><a href="/about#anc1">サイトを作った経緯</a></li>
+      <li class="nav_anc"><a href="/about#anc2">Rubyの勉強</a></li>
+      <li class="nav_anc"><a href="/about#anc3">C++への愛</a></li>
+    </ul>
+  </div>
+</li>
+<li class="page2">
+  <a href="/hobbies">Hobbies</a>
+  <div class="pulldown">
+    <ul>
+      <li class="nav_anc"><a href="/page2/#anc1">プログラミング</a></li>
+      <li class="nav_anc"><a href="/page2/#anc2">音楽鑑賞</a></li>
+      <li class="nav_anc"><a href="/page2/#anc3">読書</a></li>
+    </ul>
+  </div>
+</li>
+<li class="page3">
+  <a href="/page3/">University</a>
+  <div class="pulldown">
+    <ul>
+      <li class="nav_anc"><a href="/page3/#anc1">大学での講義</a></li>
+      <li class="nav_anc"><a href="/page3/#anc2">学部生の研究</a></li>
+      <li class="nav_anc"><a href="/page3/#anc3">大学生活</a></li>
+    </ul>
+  </div>
+</li>
+</nav>
+</header>
+<main>
+    <div class="h1_box">
+        <h1>Self-Introduction</h1>
+    </div>
+    <h1></h1>
+    <%= image_tag "mywife.jpg", class: 'circle-icon'%>
+    <a href="https://github.com/ChikaraHanakawa">
+        <%=image_tag "github.png", class: 'small_circle-icon'%>
+    </a>
+    <%= image_tag "21_mori.jpg", class: 'image_center'%>
+    <div class = "speech_bubble">
+      <h2><font color="red">公園での写真</font></h2>
+      <p>21世紀の森と広場という公園の写真です。</p>
+      <p>松戸で一番でかい公園だと思います。</p>
+    </div>
+    <h1></h1>
+    <section id="anc1">
+        <div class="h2_box">
+          <h2>サイト主の紹介</h2>
+        </div>
+        <h1></h1>
+        <div style="background-color: white; padding: 20px; border: 1px solid #ccc;" class="textbox" id="anc1">
+          <p>私の名前は花川主税です。 私はソフトウェアエンジニアになることを目指し、日々勉強をしています。 C++、Ruby、Python を使用できます。 私は現在、大学4年生（2024年）です。<br>
+          千葉工業大学先進工学部未来ロボティクス学科に在籍しています。この学科では、ロボットについてハードや回路、ソフトの3つについて幅広く勉強することができます。<br>
+          大学では、4輪駆動の台車ロボットを作成したり、ロボットアームを利用して積み木を積む作業を行うためのプログラムを書いたりしました。（自分は画像認識しかやってないのですが．．．）<br>
+          大学1年生から大学3年生の初めまで、自律二足歩行ロボットによるサッカーの国際大会「RoboCup」に出場するCIT Brainsというチームに参加していました。<br>
+          そこでは、画像認識班に在籍してました。チームでは主にラベル付けをしてました。ラベル付けとは、画像中にある物体を認識させるために四角い枠（バウンディングボックス）<br>
+          で囲んで、ロボットにこの物体はこのように画像に映ると覚えさせる？大事な工程です。<br>
+          私がどのようなプログラミングの勉強を行ったのか、何を創作したのかはGitHubを見て下さい。最近は、Ruby on Railsの勉強をしています。</p>
+          <%= image_tag "Alumite.JPG", class: 'image_fixsize' , width: '500'%>
+          <%= image_tag "Alumite.gif", class: 'image_fixsize' , height: '500'%>
+          <p>上記の画像はアルマイト加工を施工した4輪駆動の台車ロボットです。これは、台車ロボットに振子を取り付けてロボットの上で倒立させるという講義で作成したものです。<br>
+          また、上記の動画は6秒間だけ振子が倒立したものになります。これは、ポテンショメータを利用して振子の角度を検出してモータをPID制御していました。</p>
+        </div>
+    </section>
+    <h1></h1>
+    <section id="anc2">
+        <div class="h2_box">
+          <h2>私の研究について</h2>
+        </div>
+        <h1></h1>
+        <div style="background-color: white; padding: 20px; border: 1px solid #ccc;" class="textbox" id="anc2">
+          <p>私は大学の研究室で、音声対話システムに組み込むための発話区間推定モデルを構築する研究を行っています。<br>
+          <p>Transformerを使って、発話者を推定するモデルについて勉強しています。VAPと呼ばれる手法を利用しており、それはビンという区画でVA（話者活動）を区別しているものです。<br>
+          </p>
+          <%=image_tag "VAP_window.png", class: 'image_fixsize' , width: '1100', height: '400'%>
+          <p>上記の画像はVAPの手法を示しています。青が話者A、黄色が話者Bとすると話者Bが話し終わった沈黙後に話者Aが話し始めていることを予測しています。<br>
+          この4つのビンで話者が話し続けるのかそれとも、話者が交替するのかを推測します。</p>
+        </di>
+    </section>
+    <h1></h1>
+    <section id="anc3">
+        <div class="h2_box">
+          <h2>RoboCupでの活動内容（過去のお話）</h2>
+        </div>
+        <h1></h1>
+        <div style="background-color: white; padding: 20px; border: 1px solid #ccc;" class="textbox" id="anc3">
+          <p>CIT Brains（RoboCupに参加していたチーム名）では主に画像認識班に所属していました。（していたつもり．．．）</p>
+          <p>画像認識班での自分の役割は、基本的にラベル付けでした。「ボールやゴールを認識するためのプログラムを書きましたっっっ！！！」とか言えたら良いんですけど、そんなことしてないです．．．</p>
+          <p>また、一応下級生でも勉強した方が良いということでOpenCVで一時期遊んでいてそれが楽しかった記憶があります。</p>
+          <p>そんな中、大学2年生(2022年)の時に新しいロボットが腕や胸のパーツがアルミで屋内の照明の反射で白く写り、サッカーコートの白線に見えてしまうことがありました。</p>
+          <p>これは大変だと言うことで、何個か解決策を先輩方が練っていたのですが、先輩方は他の作業が多かったため自分がアルマイト加工という加工をすることになりました。</p>
+          <p>アルマイト加工とは、アルミニウムの表面を酸化皮膜で覆うことで、耐食性や耐摩耗性を向上させる加工です。</p>
+          <p>私はこの加工を行い、ロボットのパーツが白く写らないようにしました。</p>
+        </div>
+        <%= image_tag "Robot_Alumite1.jpg", class: 'rotate_image', width: '600'%>
+        <%= image_tag "Robot_Alumite2.jpg", class: 'image_fixasize', width: '600'%>
+    </section>
+    <a href="https://www.google.co.jp">
+        <div id="Maki" style="position: absolute; top: 50px; left: 1680px; width:55px; height: 75px;"></div>
+        <Maki></Maki>
+    </a>
+    </main>
+</body>
+</html>

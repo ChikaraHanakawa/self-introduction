@@ -1,0 +1,41 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .circle-icon {
+  border-radius: 50%;
+  width: 300px; /* 画像の幅を指定 */
+  height: 300px; /* 画像の高さを指定 */
+  object-fit: cover; /* 画像を円形にトリミングするために重要 */
+}
+.small_circle-icon:hover {
+  border-radius: 50%;
+  width: 50px; /* 画像の幅を指定 */
+  height: 50px; /* 画像の高さを指定 */
+  object-fit: cover; /* 画像を円形にトリミングするために重要 */
+  opacity: 10;
+}
+.image_fixsize {
+  display: block; /* img要素をブロックレベル要素に変更 */
+  border-radius: 50%;
+  object-fit: cover; /* 画像のアスペクト比を保持しつつ、指定したサイズにフィットさせる */
+}
+.rotate_image{
+  display: block; /* img要素をブロックレベル要素に変更 */
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  object-fit: cover; /* 画像のアスペクト比を保持しつつ、指定したサイズにフィットさせる */
+  transform: rotate(90deg); /* 画像を90度回転させる */
+}
